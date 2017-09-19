@@ -14,18 +14,9 @@
 				<center><h3>MANAGE USERS</h3></center>
 				<?php 
 					if (!empty($_GET['update'])) {
-						if
-						($_GET['update']==1)
-						echo
-						"<p class='message'> <h4>Data user berhasil diupdate</h4></p>";
-						else if
-						($_GET['update']==2)
-						echo
-						"<p class='message'> <h4>Data user berhasil ditambahkan</h4></p>";
-						else if
-						($_GET['update']==3)
-						echo
-						"<p class='message'> <h4>Data user berhasil dihapus</h4></p>";
+						if ($_GET['update']==1) echo "<p class='message'> <h4>Data user berhasil diupdate</h4></p>";
+						else if	($_GET['update']==2) echo "<p class='message'> <h4>Data user berhasil ditambahkan</h4></p>";
+						else if ($_GET['update']==3) echo "<p class='message'> <h4>Data user berhasil dihapus</h4></p>";
 					}
 				?>
 				<?php
