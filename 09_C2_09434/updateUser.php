@@ -37,7 +37,7 @@
 								</tr>
 								<tr>
 									<td>Password</td>
-									<td><input name="password" type="text" id="password" size="20" value="<?php echo $row['password']; ?>"/></td>
+									<td><input name="password" type="password" id="password" size="20" value="<?php echo $row['password']; ?>"/></td>
 								</tr>
 								<tr>
 									<td>Level</td>
