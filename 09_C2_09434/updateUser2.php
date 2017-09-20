@@ -10,7 +10,7 @@
 		die("Connection failed: " . mysqli_connect_error());
 	}
 	
-	$id = $_POST['id'];
+	$id = $_GET['id'];
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$level = $_POST['level'];
@@ -22,6 +22,6 @@
 			</script>';
 	}else{
 		$hasil = mysqli_query($conn, $update);
-		header('location:index.php?update=1');
+		//header('location:index.php?update=1');
 	}
 ?>

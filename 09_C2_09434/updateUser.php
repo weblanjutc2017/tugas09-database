@@ -29,7 +29,7 @@
 				<div class="span8">
 					<center>
 						<h3>UPDATE DATA USER</h3>
-						<form action="updateUser2.php" method="post">
+						<form action="updateUser2.php?id=<?php echo $id ?>" method="post">
 							<table width="319" border="0">
 								<tr>
 									<td width="152">Username</td>
