@@ -22,6 +22,6 @@
 			</script>';
 	}else{
 		$hasil = mysqli_query($conn, $update);
-		//header('location:index.php?update=1');
+		header('location:index.php?update=1');
 	}
 ?>
