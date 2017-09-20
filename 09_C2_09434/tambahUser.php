@@ -22,7 +22,7 @@
 								</tr>
 								<tr>
 									<td>Password</td>
-									<td><input name="password" type="text" id="password" size="20" /></td>
+									<td><input name="password" type="password" id="password" size="20" /></td>
 								</tr>
 								<tr>
 									<td>Level</td>
