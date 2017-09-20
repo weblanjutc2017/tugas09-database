@@ -33,7 +33,7 @@
 							<table width="319" border="0">
 								<tr>
 									<td width="152">Username</td>
-									<td width="157"><input name="username" type="text" id="username" size="20" value="<?php echo $row['username']; ?>"/></td>
+									<td width="157"><input name="username" type="text" id="username" size="20" value="<?php echo $row['username']; ?>" disabled /></td>
 								</tr>
 								<tr>
 									<td>Password</td>
