@@ -19,7 +19,7 @@
 	
 	if ($username == "" or $password == ""){
 		echo '<script type="text/javascript">
-			var answer = alert("Data masih belum lengkap"); window.location = "updateUser.php";
+			var answer = alert("Data masih belum lengkap"); window.location = "updateUser.php?id='.$id.'";
 			</script>';
 	}else{
 		$hasil = mysqli_query($conn, $update);
