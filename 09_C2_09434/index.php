@@ -65,7 +65,7 @@
 						<tr class="success">
 							<td><?php echo $no;?></td>
 							<td><?php echo $data[1]; ?></td>
-							<td><?php echo $data[2]; ?></td>
+							<td><?php echo md5($data[2]); ?></td>
 							<td><?php echo $data[3]; ?></td>
 							<td>
 								<a href= "updateUser.php?id=<?php echo $data[0];?>" class="update">Update</a>

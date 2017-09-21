@@ -10,11 +10,11 @@
 		die("Connection failed: " . mysqli_connect_error());
 	}
 	
-	$id = $_POST['id'];
+	$id = $_GET['id'];
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$level = $_POST['level'];
-	
+
 	$update = "update user set username='$username', password='$password', level='$level' where id='$id'";
 	
 	if ($username == "" or $password == ""){

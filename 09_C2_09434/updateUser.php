@@ -29,15 +29,15 @@
 				<div class="span8">
 					<center>
 						<h3>UPDATE DATA USER</h3>
-						<form action="updateUser2.php" method="post">
+						<form action="updateUser2.php?id=<?php echo $id ?>" method="post">
 							<table width="319" border="0">
 								<tr>
 									<td width="152">Username</td>
-									<td width="157"><input name="username" type="text" id="username" size="20" value="<?php echo $row['username']; ?>"/></td>
+									<td width="157"><input name="username" type="text" id="username" size="20" value="<?php echo $row['username']; ?>" readonly /></td>
 								</tr>
 								<tr>
 									<td>Password</td>
-									<td><input name="password" type="text" id="password" size="20" value="<?php echo $row['password']; ?>"/></td>
+									<td><input name="password" type="password" id="password" size="20" value="<?php echo $row['password']; ?>"/></td>
 								</tr>
 								<tr>
 									<td>Level</td>
