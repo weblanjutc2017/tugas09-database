@@ -21,7 +21,7 @@
 		echo '<script type="text/javascript">
 			alert("Data masih belum lengkap"); window.location = "tambahUser.php";
 			</script>';
-	}elseif($check){
+	}elseif($username == $check){
 		echo '<script type="text/javascript">
 			alert("Data telah digunakan"); window.location = "tambahUser.php";
 			</script>';
