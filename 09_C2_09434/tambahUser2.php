@@ -15,12 +15,13 @@
 	$level = $_POST['level'];
 	$input = "insert into user(username, password, level) values ('$username', '$password','$level')";
 	$cek = "select username from user where username='$username'";
+	$check = mysqli_query($conn, $cek);
 	
 	if ($username == "" or $password == ""){
 		echo '<script type="text/javascript">
 			alert("Data masih belum lengkap"); window.location = "tambahUser.php";
 			</script>';
-	}elseif($cek){
+	}elseif($check){
 		echo '<script type="text/javascript">
 			alert("Data telah digunakan"); window.location = "tambahUser.php";
 			</script>';
