@@ -16,12 +16,13 @@
 	$input = "insert into user(username, password, level) values ('$username', '$password','$level')";
 	$cek = "select username from user where username='$username'";
 	$check = mysqli_query($conn, $cek);
+	$row = mysqli_fetch_array($check);
 	
 	if ($username == "" or $password == ""){
 		echo '<script type="text/javascript">
 			alert("Data masih belum lengkap"); window.location = "tambahUser.php";
 			</script>';
-	}elseif($username == $check){
+	}elseif($username == $row['username']){
 		echo '<script type="text/javascript">
 			alert("Data telah digunakan"); window.location = "tambahUser.php";
 			</script>';
